@@ -1,0 +1,2 @@
+read num
+echo "${num}"
