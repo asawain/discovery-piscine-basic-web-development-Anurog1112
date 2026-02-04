@@ -2,29 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="calc.css">
+    <script src="cale.js"></script>
     <title>Calculator</title>
 </head>
 <body>
     <h1>Calculator</h1>
     <table>
         <tr>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <bottom id="" onclick="" >Try me!</bottom>
+            <td class="calc-container">
+                <input type="text" id="leftOp" placeholder="0">
+                
+                <select id="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="%">%</option>
+                </select>
+                
+                <input type="text" id="rightOp" placeholder="0">
+                
+                <input type="submit" value="Try me!" onclick="calculate()">
             </td>
         </tr>
     </table>
