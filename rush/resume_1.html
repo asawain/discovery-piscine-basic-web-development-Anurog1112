@@ -10,29 +10,131 @@
 <body>
 
 <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills & Showcase</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html" class="navbar-brand">asawain</a>
+    <div class="navbar-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <a href="index.html" class="navbar-home">
+        <i class="fas fa-home"></i>
+    </a>
 </nav>
 
 <section id="about" class="section">
-    <div class="about-card">
-        <img class="profile-img" src="assets/profile-1.jpg" alt="Profile">
-
+    <!-- Profile Header -->
+    <div class="profile-header">
+        <img class="profile-img" src="assets/profile-1.jpg" alt="Adjima Sawain">
         <h1 class="name-title">Adjima Sawain</h1>
-        <h3>Student</h3>
+        <h3 class="profile-subtitle">Student</h3>
+        <p class="profile-description">Passionate about data analysis, creative design, and innovative solutions. A multifaceted professional interested in finance, music, and technology.</p>
+    </div>
 
-        <div class="info-box">
-            <p><i class="fa-solid fa-graduation-cap"></i> <strong>Education:</strong> KMITL</p>
-            <p><i class="fa-solid fa-flask"></i> <strong>Faculty:</strong> Science</p>
-            <p><i class="fa-solid fa-chart-pie"></i> <strong>Major:</strong> Statistics and Data Analysis</p>
+    <!-- Profile Card Container -->
+    <div class="profile-container">
+        <!-- Left Column: Education Timeline & Basic Info -->
+        <div class="profile-column profile-left">
+            <div class="info-card">
+                <h3><i class="fas fa-graduation-cap"></i> Current Education</h3>
+                <p><strong>Institution:</strong> KMITL</p>
+                <p><strong>Faculty:</strong> Science</p>
+                <p><strong>Major:</strong> Statistics & Data Analysis</p>
+            </div>
+
+            <div class="education-timeline">
+                <h3><i class="fas fa-book"></i> Education Journey</h3>
+                <div class="timeline-item-compact">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-text">
+                        <span class="timeline-year">2024 - Present</span>
+                        <p class="timeline-label">Bachelor's Degree</p>
+                        <p class="timeline-detail">KMITL - Statistics & Data Analysis</p>
+                    </div>
+                </div>
+                <div class="timeline-item-compact">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-text">
+                        <span class="timeline-year">2021 - 2024</span>
+                        <p class="timeline-label">High School (Sci-Math)</p>
+                        <p class="timeline-detail">Hatyaiwittayalai School</p>
+                    </div>
+                </div>
+                <div class="timeline-item-compact">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-text">
+                        <span class="timeline-year">2018 - 2021</span>
+                        <p class="timeline-label">Junior High School</p>
+                        <p class="timeline-detail">Prince of Songkla University Demonstration School</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-summary">
+                <h4>Core Skills</h4>
+                <div class="skill-badges">
+                    <span class="skill-badge">Illustration</span>
+                    <span class="skill-badge">Statistics</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Data Modeling</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Character Traits & Interests -->
+        <div class="profile-column profile-right">
+            <div class="traits-header">
+                <h3><i class="fas fa-sparkles"></i> My Character Traits</h3>
+                <p>I embody multiple perspectives and interests</p>
+            </div>
+
+            <!-- Character 1 -->
+            <div class="character-badge analyst-badge">
+                <div class="badge-icon"><i class="fas fa-brain"></i></div>
+                <div class="badge-content">
+                    <h4>The Analyst</h4>
+                    <p>Data-driven thinker</p>
+                    <ul class="badge-list">
+                        <li>Finance & Investment Analysis</li>
+                        <li>Machine Learning & Python</li>
+                        <li>Data Visualization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Character 2 -->
+            <div class="character-badge creator-badge">
+                <div class="badge-icon"><i class="fas fa-palette"></i></div>
+                <div class="badge-content">
+                    <h4>The Creator</h4>
+                    <p>Artistic innovator</p>
+                    <ul class="badge-list">
+                        <li>Vocaloid & Music Composition</li>
+                        <li>UI/UX Design</li>
+                        <li>Digital Art & Animation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Character 3 -->
+            <div class="character-badge connector-badge">
+                <div class="badge-icon"><i class="fas fa-handshake"></i></div>
+                <div class="badge-content">
+                    <h4>The Connector</h4>
+                    <p>Collaborative problem-solver</p>
+                    <ul class="badge-list">
+                        <li>Team Collaboration</li>
+                        <li>Creative Problem Solving</li>
+                        <li>Innovation & Learning</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="skills" class="section gray">
-    <h2>Experience & Skills</h2>
+<!-- Projects Section -->
+<section id="projects" class="section gray">
+    <h2>Featured Projects</h2>
     <ul class="skills-list">
         <li>Illustration</li>
         <li>Statistics Analysis</li>
@@ -49,7 +151,7 @@
             </div>
             <div class="project-card">
                 <h4>Roblox Studio</h4>
-                <p>Designed 3D models with blender and creative outfits within the Roblox platform.</p>
+                <p>Designed 3D models with Blender and creative outfits within the Roblox platform.</p>
             </div>
             <div class="project-card">
                 <h4>Status Classification</h4>
@@ -66,13 +168,13 @@
 <section id="contact" class="section contact-section">
     <h2>Contact Me</h2>
     <div class="contact-grid">
-        <a href="mailto:67051260@kmitl.ac.th" class="contact-card">
+        <div class="contact-card">
             <div class="icon-circle">
                 <i class="fa-solid fa-envelope"></i>
             </div>
             <h4>Email</h4>
-            <p>67051260@kmitl.ac.th</p>
-        </a>
+            <p>pureadjima1@gmail.com</p>
+        </div>
         <a href="https://github.com/asawain" target="_blank" class="contact-card">
             <div class="icon-circle">
                 <i class="fa-brands fa-github"></i>
